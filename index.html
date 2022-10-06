@@ -172,9 +172,15 @@
         margin-bottom: 10px;
     }
 
+.page {
+	overflow:hidden;
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 
 
-    footer {
+.footer {
 
         background: #7272a1;
         padding: 5px;
@@ -185,19 +191,99 @@
         margin-bottom: 10px;
     }
 
+.footer {
+	margin-top:auto;
+}
+.container {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1900px;
+   padding: 0 15px;
+}
+
+.wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1170px) {
+    .wrapper {
+        max-width: 1170px;
+    }
+}
+@media only screen and (max-width:800px) 
+{
+h3 {
+	font-size:12px;
+}
+h4 {
+	font-size:8px;
+}
+h2 {
+	font-size:16px;
+}
+article {
+        background: #7272a1;
+        width:20vw;
+	height:80vh;
+}
+ aside {
+        width:60vw;
+	height:55vh;
+        background: #7272a1;
+}
+aside1 {
+        width:60vw;
+	height:15vh;
+        background: #7272a1;
+}
+
+}
+
+@media only screen and (max-width:400px) 
+{
+h3 {
+	font-size:6px;
+}
+h4 {
+	font-size:4px;
+}
+h2 {
+	font-size:8px;
+}
+article {
+        background: #7272a1;
+        width:20vw;
+	height:80vh;
+}
+ aside {
+        width:60vw;
+	height:55vh;
+        background: #7272a1;
+}
+aside1 {
+        width:60vw;
+	height:15vh;
+        background: #7272a1;
+}
+
+}
+
+
 </style>
 
 <head>
 </head>
 <body>
-
+<div class="container">
+<div class="page">
 <td>
     <center><img src="logo.png" width=150px height=150px></center>
 </td>
+<div class="wrapper">
+<header><img src="enter.png" width=100% height=100vh></header>
 
-<header><br><img src="exit.png" width=150px height=70px></header>
-
-<body>
 <div class="search">
 
     <input type="text" class="searchText" placeholder="Поиск...">
@@ -211,19 +297,19 @@
 <article><big><center><h2>Навигация</h2></center>
     <br>
     <hr>
-    <h3><img  src="logo.png" width=30px height=30px> Главная</h3>
+    <h3><img  src="logo.png" width=10vw height=10vw> Главная</h3>
     <hr>
-    <h3><img  src="logo.png" width=30px height=30px> Новости</h3>
+    <h3><img  src="logo.png" width=10vw height=10vw> Новости</h3>
     <hr>
-    <h3><img  src="logo.png" width=30px height=30px> Видео</h3>
+    <h3><img  src="logo.png" width=10vw height=10vw> Видео</h3>
     <hr>
-    <h3><img  src="logo.png" width=30px height=30px> Фото</h3>
-    <hr>
-
-    <h3><img  src="logo.png" width=30px height=30px> Файлы</h3>
+    <h3><img  src="logo.png"width=10vw height=10vw> Фото</h3>
     <hr>
 
-    <h3><img  src="logo.png" width=30px height=30px> Уведомления</h3>
+    <h3><img  src="logo.png" width=10vw height=10vw> Файлы</h3>
+    <hr>
+
+    <h3><img  src="logo.png" width=10vw height=10vw> Уведомления</h3>
 
 </big>
 
@@ -231,28 +317,30 @@
 <aside><big><center><h2>Новости дня</h2></center></big>
     <br>
     <hr>
-    <img src="logo.png" width=100px height=100px>
-    <center><h4>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+    <h4><img src="logo.png" width=30vw height=30vw>
+    Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
     <br>
-        Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</h4></center>
-
-
+        Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</h4>
 </aside>
 
+
 <aside1>
-    <img src="logo.png" width=100px height=100px>
-    <center><h4>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+    <h4><img src="logo.png" width=30vw height=30vw>
+   Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
         <br>
-        Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</h4></center>
+        Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</h4>
 </aside1>
 
 <br>
 <br>
-<footer><center><br>Лабораторная работа №7/1
+<footer class="footer"><center><br><h3>Лабораторная работа №7/1
     <br>
     «Разработка графических макетов и дизайна web – приложения»
     <br>
-    Пятница С. ИР-20-4</center>
+    Пятница С. ИР-20-4</center></h3>
 </footer>
+</div>
+</div>
+</div>
 </body>
 </html>
